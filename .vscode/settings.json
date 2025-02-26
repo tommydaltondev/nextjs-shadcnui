@@ -1,5 +1,16 @@
 {
   "typescript.tsdk": "../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "php.version": "8.1"
+  "php.version": "8.1",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3b3e31",
+    "activityBar.foreground": "#fa4b00",
+    "titleBar.activeBackground": "#3b3e31",
+    "titleBar.activeForeground": "#fa4b00",
+    "editorCursor.foreground": "#ffc77e",
+    "terminalCursor.foreground": "#46e2a6",
+    "editor.selectionBackground": "#E2FFBD4D",
+    "editor.wordHighlightBackground": "#127970a2",
+    "editor.selectionForeground": "#ffffff"
+  }
 }

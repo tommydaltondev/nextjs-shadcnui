@@ -13,6 +13,20 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1840px", // Adjusted for a 1920px display
+        "4xl": "2450px", // Adjusted for a 2560px display
+        "5xl": "3080px", // Adjusted for a 3200px display
+        "6xl": "3680px", // Adjusted for a 3840px (4K) display
+        "7xl": "4920px", // Adjusted for a 5120px (5K) display
+      },
+    },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
