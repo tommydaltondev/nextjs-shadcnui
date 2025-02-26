@@ -1,4 +1,4 @@
-# Build
+## Build
 
 Next.js 13 build for testing shadcnUI, Radix UI components and Tailwind CSS.
 
