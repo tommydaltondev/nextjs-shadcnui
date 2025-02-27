@@ -1,4 +1,4 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,6 +13,19 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1840px", // Adjusted for a 1920px display with possible frame
+        "4xl": "2450px", // Adjusted for a 2560px display with possible frame
+        "5xl": "3080px", // Adjusted for a 3200px display with possible frame
+        "6xl": "3680px", // Adjusted for a 3840px (4K) display with possible frame
+        "7xl": "4920px", // Adjusted for a 5120px (5K) display with possible frame
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -48,23 +61,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      screens: {
-        xs: "480px",
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-        "3xl": "1840px", // Adjusted for a 1920px display with possible frame
-        "4xl": "2450px", // Adjusted for a 2560px display with possible frame
-        "5xl": "3080px", // Adjusted for a 3200px display with possible frame
-        "6xl": "3680px", // Adjusted for a 3840px (4K) display with possible frame
-        "7xl": "4920px", // Adjusted for a 5120px (5K) display with possible frame
-      },
-    },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
@@ -72,12 +71,12 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0px" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0px" },
         },
       },
       animation: {
@@ -87,4 +86,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
